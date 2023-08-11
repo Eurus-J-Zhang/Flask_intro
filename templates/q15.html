@@ -1,11 +1,5 @@
 {% extends 'base.html' %}
 
-
-{% block script %}
-
- {% endblock %}
-
-
 {% block title_text %}
 Please read the text and answer the question.
 {% endblock %}
@@ -40,22 +34,12 @@ Indo-European branch.
     Which of the following country influenced the spread of modern English?<br>
 </p>
 <form id="form" method="POST" action="q15">
-    <input type="radio" id="A" name="answer" value="A">
+    <input type="radio" id="A" name="answer" value="A" required>
     <label for="A">Australia.</label><br>
-    <input type="radio" id="B" name="answer" value="B">
+    <input type="radio" id="B" name="answer" value="B" required>
     <label for="B">The United States of America.</label><br>
     <br>
     <input type="submit" value="Submit" class="submit-btn">
 </form>
-
-{% endblock %}
-
-
-{% block result %}
-<div class="result"></div>
-{% endblock %}
-
-{% block continue %}
-
 
 {% endblock %}

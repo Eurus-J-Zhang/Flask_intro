@@ -1,11 +1,5 @@
 {% extends 'base.html' %}
 
-
-{% block script %}
-
- {% endblock %}
-
-
 {% block title_text %}
 Please read the text and answer the question.
 {% endblock %}
@@ -40,22 +34,12 @@ Indo-European branch.
     How did English become the world's leading language?<br>
 </p>
 <form id="form" method="POST" action="q21">
-    <input type="radio" id="A" name="answer" value="A">
+    <input type="radio" id="A" name="answer" value="A" required>
     <label for="A">Through word of mouth of the British Empire and the US.</label><br>
-    <input type="radio" id="B" name="answer" value="B">
+    <input type="radio" id="B" name="answer" value="B" required>
     <label for="B">Through printed and electronic media of the British Empire and the US.</label><br>
     <br>
     <input type="submit" value="Submit" class="submit-btn">
 </form>
-
-{% endblock %}
-
-
-{% block result %}
-<div class="result"></div>
-{% endblock %}
-
-{% block continue %}
-
 
 {% endblock %}
