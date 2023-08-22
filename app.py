@@ -367,7 +367,7 @@ def q28r():
 # Q29
 @app.route('/q29', methods=['GET', 'POST'])
 def q29():
-    return question_route(29, 'B', 'q29')
+    return question_route(29, 'A', 'q29')
 
 @app.route('/q29r')
 def q29r():
