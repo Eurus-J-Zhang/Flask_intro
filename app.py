@@ -187,7 +187,7 @@ def q8r():
 # Q9
 @app.route('/q9', methods=['GET', 'POST'])
 def q9():
-    return question_route(9, 'A', 'q9')
+    return question_route(9, 'B', 'q9')
 
 @app.route('/q9r')
 def q9r():
