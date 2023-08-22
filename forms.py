@@ -47,4 +47,4 @@ class EmotionForm4(FlaskForm):
   
 # Feedback collecting 
 class FeedbackForm(FlaskForm):
-    feedback = StringField('',validators=[DataRequired()],widget=TextArea())
+    feedback_after = StringField('',validators=[DataRequired()],widget=TextArea())
